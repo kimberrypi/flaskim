@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<form action="/results" method="POST">
+		<p>Full Name: <br />
+			<input type="text" name="fullname"></p>
+		<p>Birthday: <br />
+			<input type="text" name="birthday"></p>
+		<p>Age: <br />
+			<input type="text" name="age"></p>
+		<p>School: <br />
+			<input type="text" name="school"></p>
+		<p>Gender: <br />
+			<select name="gender"></p>
+			<option value="Female">F</option>
+			<option value="Male">M</option></select>
+		<p><input type="submit" value="Submit"></p>
+	</form>
+
+	<div class="button">
+	</div>
+{% endblock %}

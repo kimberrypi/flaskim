@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html>
+	<p><strong>Fullname:</strong>
+		{{ request.form.fullname }}</p>
+
+	<p><strong>Birthday:</strong>
+		{{ request.form.birthday }}</p>
+
+	<p><strong>Age:</strong>
+		{{ request.form.age }}</p>
+
+	<p><strong>School:</strong>
+		{{ request.form.school }}</p>
+
+	<p><strong>Gender:</strong>
+		{{ request.form.gender }}</p>
+
+</html>
+
+{% endblock %}
